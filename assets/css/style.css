@@ -8,10 +8,9 @@
 /*--------------------------------------------------------------
 # Variables
 --------------------------------------------------------------*/
-body {
-  color: purple;
-}
-
+/** Colors */
+/** Fonts */
+/** Media Queries */
 /*--------------------------------------------------------------
 # Reset
 --------------------------------------------------------------*/
@@ -105,12 +104,42 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: "Open Sans", sans-serif;
 }
 
 main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  background: #038484;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+@media (max-width: 479px) {
+  .btn {
+    font-size: 1.4rem;
+  }
 }
 
 /*--------------------------------------------------------------
